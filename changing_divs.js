@@ -5,18 +5,19 @@ $(document).ready(function(){
     $('#2').click(function(){
     	onclickChange(":nth-child(2)", ":first", ":nth-child(3)", "layer2", "layer3", "layer1");
     })
-	$('#3').click(function(){
+    $('#3').click(function(){
 		onclickChange(":nth-child(3)", ":first", ":nth-child(2)", "layer3", "layer2", "layer1");
-	})
+    })
     $('#planeIndex').click(function(){
     	onclickChange(":nth-child(2)", ":first", ":nth-child(3)", "layer2", "layer3", "layer1");
     })
     $('#planeAbout').click(function(){
 		onclickChange(":nth-child(3)", ":first", ":nth-child(2)", "layer3", "layer2", "layer1");
     })
-	$('#planeInterest').click(function(){
+    $('#planeInterest').click(function(){
     	onclickChange(":first", ":nth-child(2)", ":nth-child(3)", "layer1", "layer2", "layer3");
-	})
+    })
+    
 	function onclickChange (clicked, reduceFocus1, reduceFocus2, showlayer, hidelayer1, hidelayer2) { 
 		//button's original style
     	var c1 = $("#footer").children(":first").children(clicked).children(":first").children(":first")
